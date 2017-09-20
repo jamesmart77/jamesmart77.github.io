@@ -1,50 +1,68 @@
-<!-- HTML with THREE stylesheets! -->
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <meta charset="UTF-8">
-  <title>1.2.9 Exercise</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
 
-  <!-- This critical line points your HTML to the CSS file. Notice the "relative" pathway  -->
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <!-- Plus TWO MORE -->
-  <link rel="stylesheet" type="text/css" href="style2.css">
-  <link rel="stylesheet" type="text/css" href="style3.css">
+    <!-- custom css -->
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+    
+    <!-- Linking jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
+    <title>Why James Should Be On Your Team</title>
 </head>
 
 <body>
-  <header>
+    <h1 class="jumbotron">Rational Debate - Part Deux</h1>
 
-    <h1>Student Bio</h1>
+    <div class="row">
 
-  </header>
+        <div class="text-center">
+            <div class="col-sm-6 well text-center">
+                <div>
+                    <p id="factText">Why James Should be on your team...</p>
+                </div>
 
-  <div class="container">
+                <div class="splash">
+                    <img src="assets/images/questionmark.png" alt="" id="mainImg">
+                </div>
+                <button class="btn btn-primary form-control" onclick="nextImage('mainImg')">Click to find out</button>
+            </div>
+        </div>
 
-    <section id="main-bio">
 
-      <h2>Your Name</h2>
-      <img src="http://placehold.it/200x200" alt="Your Image" id="bio-image">
-      <p>Write a short paragraph or two about yourself, or use placeholder text from <a href="http://www.lipsum.com/">www.lipsum.com</a></p>
 
-    </section>
+        <!-- <div style="background-color: #ccc;">
+            <a href="javascript:nextImage('mainImg')"><img src="assets/images/next_image.jpg" alt="">Next Image</a>
+            <button class="btn btn-primary form-control" style="width: 150px;" id="nextPic">Next Picture</button>
+        </div> -->
+        <!-- <div class="col-sm-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">List Of Grumpy Cat's Favorite Things</div>
+                <div class="panel-body">
+                    <ol>
+                        <li>Sleep</li>
+                        <li>Food</li>
+                        <li>Catnip</li>
+                        <li>Pizza</li>
+                        <li>Not Liking Things</li>
+                    </ol>
+                </div>
+            </div>
+        </div> -->
 
-    <section id="contact-info">
+    </div>
 
-      <h2>Contact Info</h2>
-
-      <ul>
-        <li><strong>Email:</strong> <a href="#">someplace@gmail.com</a></li>
-        <li><strong>Github:</strong> <a href="#">sampleName</a></li>
-        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
-      </ul>
-
-    </section>
-
-  </div>
+    <!-- Linking our JavaScript file -->
+    <script type="text/javascript" src="assets/javascript/logic.js"></script>
 
 </body>
 

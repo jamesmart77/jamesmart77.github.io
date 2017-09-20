@@ -1,2 +1,2 @@
-# jamesmart77.github.io
-personal repo for github pages
+# whyiamneeded.github.io
+Why James should be on your team
