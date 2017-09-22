@@ -43,5 +43,35 @@ p, h1, h4 {
 }
 
 .well {
-	margin: 5px 70px;
+	margin: 5px 5px 20px 70px;
+	padding: 5px 19px;
+}
+
+.well h3 {
+	margin-top: 0px;
+}
+
+textarea {
+	border-radius: 5px;
+	width: 100%;
+	max-width: 100%;
+	border: 1px solid #ccc;
+}
+
+#added-comment{
+	border-radius: 5px;
+	width: 100%;
+	border: 1px solid #ccc;
+	text-align: left;
+    padding: 10px;
+    background: #fff;
+}
+
+#post-date {
+	width: 100%;
+	border: none;
+	text-align: right;
+	padding: 5px;
+	font-size: 10px;
+    background: #fff;
 }
