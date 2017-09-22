@@ -2,7 +2,7 @@
 	background-color: teal;
 	color: #ffffff;
 	font-weight: bold;
-	padding-left: 52px;
+	padding-left: 15px;
 }
 
 .jumbotron h1 {
@@ -42,9 +42,14 @@ p, h1, h4 {
     color: teal;
 }
 
+.buffer {
+	margin-top: 20px;
+}
 .well {
-	margin: 5px 5px 20px 70px;
+	margin: 5px 5px 20px 30px;
 	padding: 5px 19px;
+	min-width: 450px;
+	float: left;
 }
 
 .well h3 {
