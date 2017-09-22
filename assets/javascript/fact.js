@@ -1,13 +1,3 @@
-// When the factButton is clicked...
-// $("#factButton").on("click", function() {
-// 	// We generate a random number between 0 and 4 (the number of facts in the jamesFactArray)
-// 	var factNum = Math.floor((Math.random() * jamesFactArray.length));
-// 	// We display the fact from the jamesFactArray that is in the random position we just generated.
-// 	$("#factText").text(jamesFactArray[factNum])
-// })
-
-/*------------------------------------*/
- 
 function nextImage(element){
 	//assign html element id
     var img = document.getElementById(element);
