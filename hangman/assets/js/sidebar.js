@@ -1,5 +1,5 @@
 var audioElement = document.createElement("audio");
-audioElement.setAttribute("src", "Assets/audio/mistyMtns.mp3");
+audioElement.setAttribute("src", "assets/audio/mistyMtns.mp3");
 
 $(document).ready(function () {
 
