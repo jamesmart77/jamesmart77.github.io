@@ -31,7 +31,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 
-    <title>James Martineau | About</title>
+    <title>James Martineau | Contact</title>
     <link rel="shortcut icon" href="assets/images/favicon.ico" />
 
 </head>
@@ -52,39 +52,44 @@
                           <span class="icon-bar"></span>
                           <span class="icon-bar"></span>
                         </button>
-                <!-- <a class="navbar-brand" href="about.html">James Martineau</a> -->
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html"><i class="fa fa-id-card-o" aria-hidden="true"></i> About</a></li>
+                    <li><a href="index.html"><i class="fa fa-id-card-o" aria-hidden="true"></i> About</a></li>
                     <li><a href="portfolio.html"><i class="fa fa-folder-o" aria-hidden="true"></i> Portfolio</a></li>
-                    <li><a href="contact.html"><i class="fa fa-user-o" aria-hidden="true"></i> Contact</a></li>
+                    <li class="active"><a href="contact.html"><i class="fa fa-user-o" aria-hidden="true"></i> Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="row container-fluid wrapper">
-        <div class="panel panel-info col-md-8">
+    <div class="row container-fluid">
+        <div class="panel panel-info col-md-8 contact-form">
             <div class="page-header">
-                <h1>About Me</h1>
+                <h1>Contact</h1>
             </div>
             <div class="panel-body">
-                <img class="img-responsive img-rounded profile-pic" src="assets/images/profile.jpg" alt="james martineau profile picture">
-                <p class="about-body">
-                    In the beginning of college I had a vague idea of what coding was but certainly lacked an appreciation of its magnitude and
-                    power to impact every area of life. Then, one late evening, my mind was rocked with something as simple
-                    as VBA. The hook was sunk and I have been pursuing programming ever since.
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="John Smith">
+                    </div>
 
-                    <br><br> My enjoyment for programming comes from the design and chase of it all. I like solving problems
-                    and creating a great user experience!
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="example@information.com">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
 
-                    <br><br> When I'm not coding, spending time with my wife (best friend) and our church family is where
-                    you will find me. We like getting involved in the community of Somersworth and enjoy going for walks
-                    through the woods with our beagle coon hound, York.
-                </p>
-
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" placeholder="Enter your message here..."></textarea>
+                    </div>
+                   
+                    <button type="submit" class="btn btn-primary submit-btn pull-right">Submit</button>
+                   
+                </form>
             </div>
         </div>
 

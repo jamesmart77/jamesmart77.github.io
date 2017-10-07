@@ -1,82 +1,282 @@
-.jumbotron {
-	background-color: teal;
-	color: #ffffff;
-	font-weight: bold;
-	padding-left: 15px;
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 
-.jumbotron h1 {
-	color:white;
+
+/* sticky header */
+
+.personal-header {
+    background-color: #4aaaa5;
+    color: #fff;
+    height: 75px;
 }
 
-p, h1, h4 {
-	font-family: Arial, Helvetica, sans-serif;
+.affix {
+    top: 0;
+    width: 100%;
 }
 
-#funText {
-	color: black;
-	font-size: 24px;
-	font-family: 'Roboto Slab', serif;
+.affix+.container-fluid {
+    padding-top: 70px;
 }
 
-#box {
-	height: 100px;
-	width: 100px;
-	margin:auto;
+body {
+    background: url(../images/background.png);
+    background-repeat: repeat;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    /* padding-top: 80px; */
 }
 
-#mainImg {
-	height: 185px;
-	border-radius: 25px;
-    border: 2px solid #777777;
-    padding: 2px; 
+
+/* awesome font icons */
+
+.fa-id-card-o {
+    color: darkred;
 }
 
-.btn {
-	margin-top: 5px;
+.fa-folder-o {
+    color: tan
 }
 
-#factText {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 24px;
-    color: teal;
+.fa-user-o {
+    color: green
 }
 
-.buffer {
-	margin-top: 20px;
-}
-.well {
-	margin: 5px 5px 20px 30px;
-	padding: 5px 19px;
-	min-width: 450px;
-	float: left;
+
+/* navbar container */
+
+.navbar-inverse {
+    z-index: 2;
 }
 
-.well h3 {
-	margin-top: 0px;
+.container-fluid {
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+
+/* nav bar link colors */
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffffff;
+}
+
+
+/* navbar link hover */
+
+.navbar-inverse .navbar-nav li a:hover {
+    background: #ccc;
+    color: #777777;
+}
+
+
+/* when hamburger menu appears, drop down align right */
+/* navbar option align right */
+
+.navbar-nav>li>a {
+    text-align: right;
+}
+
+
+/*------- general content section------ */
+
+
+/* about me panel */
+
+.panel-info {
+    max-width: 100%;
+    margin-bottom: 80px;
+    overflow: scroll;
+}
+
+
+/* connect with me panel */
+
+.panel-default {
+    float: right;
+    border-color: #bbb;
+    padding: 0 15px 0 15px;
+    width: 290px;
+    margin-bottom: 15px;
+}
+
+
+/* panel page header formatting */
+
+.page-header {
+    margin-bottom: 10px;
+}
+
+.page-header h1,
+h3 {
+    color: #4aaaa5;
+}
+
+.page-header h3 {
+    text-align: center;
+}
+
+
+/* about me profile pic */
+
+.profile-pic {
+    max-width: 30%;
+    min-width: 100px;
+    height: auto;
+    border: 2px solid #bbb;
+    float: left;
+    margin: 0 15px 10px 0;
+}
+
+.about-body {
+    line-height: 24px;
+}
+
+
+/* connect with me */
+
+.icons {
+    margin: auto;
+}
+
+.connect-pic {
+    width: 72px;
+    height: auto;
+    float: left;
+    margin: 5px 5px 20px 6px;
+}
+
+.connect-pic:hover {
+    width: 80px;
+    margin: -2px;
+}
+
+
+/* portfolio pic */
+
+.portfolio-pic {
+    width: 100%;
+    margin: 5px;
+}
+
+.portfolio-pic:hover {
+    border: 3px solid #bbb;
+    /* negative margin helps stabalize other element -- cleaner */
+    margin-bottom: -0.5px;
+}
+
+.hangman {
+    width: 56%;
+}
+
+.hangman:hover{
+    border: 0px solid #ffffff;
+}
+.portfolio-row {
+    margin: -45px -15px 0 -15px;
+}
+
+.label {
+    width: 100%;
+    height: 45px;
+    z-index: 1;
+    float: left;
+    position: relative;
+    bottom: -200px;
+    left: 5px;
+    line-height: 40px;
+    font-size: 21px;
+    background-color: #4aaaa5;
+}
+
+
+/* contact form */
+
+label {
+    color: #777777;
 }
 
 textarea {
-	border-radius: 5px;
-	width: 100%;
-	max-width: 100%;
-	border: 1px solid #ccc;
+    max-width: 100%;
+    max-height: 175px;
+    min-height: 30px;
 }
 
-#added-comment{
-	border-radius: 5px;
-	width: 100%;
-	border: 1px solid #ccc;
-	text-align: left;
-    padding: 10px;
-    background: #fff;
+.submit-btn {
+    width: 150px;
 }
 
-#post-date {
-	width: 100%;
-	border: none;
-	text-align: right;
-	padding: 5px;
-	font-size: 10px;
-    background: #fff;
+.submit-btn:hover {
+    border: 2px solid #bbb;
+    margin: -1px;
+}
+
+
+/* footer */
+
+.navbar-fixed-bottom {
+    border-top: 5px solid #4aaaa5;
+    background: #777777;
+    color: #ffffff;
+}
+
+.footer {
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* ---------------------------------------- */
+
+
+/* slide nav containers out for more room */
+
+@media screen and (max-width: 992px) {
+    .panel-default {
+        width: 100%;
+        float: left;
+        margin-bottom: 70px;
+    }
+    .panel-info {
+        margin-bottom: 10px;
+    }
+    .page-header h3 {
+        text-align: left;
+    }
+    /* portfolio pics */
+    .portfolio-pic {
+        max-width: 89%;
+        margin: auto;
+        margin-bottom: 15px;
+        min-width: 225px;
+    }
+    .label {
+        width: 89.15%;
+        left: 5.5%;
+        bottom: -350px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .label {
+        bottom: -250px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    body {
+        min-width: 425px;
+    }
+    .container-fluid {
+        padding: 0 5px;
+    }
+    .personal-header {
+        padding-left: 20px;
+    }
+    .label {
+        bottom: -190px;
+    }
 }
