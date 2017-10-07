@@ -174,6 +174,7 @@ h3 {
 
 .hangman:hover{
     border: 0px solid #ffffff;
+    margin-bottom: -0.5px;
 }
 .portfolio-row {
     margin: -45px -15px 0 -15px;
@@ -192,7 +193,15 @@ h3 {
     background-color: #4aaaa5;
 }
 
+.label a{
+    text-decoration: none;
+    color: #ffffff;
+}
 
+.label a:hover {
+    font-weight: bold;
+    color: darkorange;
+}
 /* contact form */
 
 label {
