@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- RESET CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- We need to bring in the bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <title>Hangman Game</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- sidebar provided by bootstrapious.com -->
+        <nav id="sidebar">
+            <!-- Sidebar Header -->
+            <div class="sidebar-header">
+                <h3>Hangman Menu</h3>
+            </div>
+
+            <!-- Sidebar Links -->
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="https://jamesmart77.github.io" target="_blank">
+                        <i class="fa fa-home" aria-hidden="true" style="color: tan"></i>
+                        Jamesmart77
+                    </a>
+                </li>
+                <li>
+                    <a onclick="themeMusic();" href="#" class="music">
+                        <i class="fa fa-volume-off" aria-hidden="true" style="color: red"></i>
+                        Turn Off Music
+                    </a>
+                </li>
+                <li>
+                    <a onclick="howToPlay();" href="#">
+                        <i class="fa fa-info" aria-hidden="true" style="color: orange"></i>
+                        How To Play
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="content">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                            <i class="glyphicon glyphicon-align-left"></i>
+                            <span>Toggle Menu</span>
+                        </button>
+                    </div>
+
+                    <div class="navbar-right">
+                        <button type="button" id="volumebtn" class="btn btn-warning" onclick="themeMusic();">
+                            <i class="fa fa-volume-off" aria-hidden="true" style="color: red"></i>&nbsp;&nbsp; Turn Off Music
+                        </button>
+                    </div>
+                    <div class="text-center header-title">
+                        <span>Hangman</span>
+                    </div>
+                </div>
+            </nav>
+
+
+            <!-- <div class="container"> -->
+            <div class="row">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row col-md-12">
+                            <div class="hangman-pic">
+                                <img class="logo" src="assets/images/logo.png">
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <p class="text-center rules">TYPE A LETTER TO MAKE A GUESS</p>
+                        </div>
+
+                        <div class="col-md-12 hangman-section">
+                            <p class="text-center">Word Challenge</p>
+                            <!-- container for hangman word -->
+                            <div id="challengeWord"></div>
+
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <p id="modalText">You won! Nice Job!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- user stats section -->
+                        <div class="row">
+                            <hr>
+                            <div class="col-md-6 userStats">
+                                <div id="wins">Wins</div>
+                                <div id="guessRemaining">Guesses Remaining</div>
+                                <div id="lettersGuessed">Letters Guessed</div>
+                            </div>
+                            
+                            <!-- user enters full word guess section -->
+                            <div class="col-md-6 lucky">
+                                <div class="form-group">
+                                    <input id="fullGuess" class="form-control" type="text" placeholder="Enter your best guess space cadet...">
+                                    <button type="submit" id="guessbtn" class="btn btn-primary pull-right" onclick="checkGuess();">Check Answer</button>
+                                </div>
+                                <button type="button" id="feelingLucky" class="btn btn-default pull-right" onclick="feelingLucky()">Feeling Lucky</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <nav class="navbar-footer navbar-fixed-bottom">
+            <div class="container footer-container">
+                <p class="text-center ">Designed by
+                    <a href="https://jamesmart77.github.io" target="_blank">
+                        <b>James Martineau</b>
+                    </a>
+                    <br> &copy Copyright 2017
+                </p>
+            </div>
+        </nav>
+    </div>
+    <script type="text/javascript" src="assets/js/game.js"></script>
+    <script type="text/javascript" src="assets/js/modal.js"></script>
+    <script type="text/javascript" src="assets/js/sidebar.js"></script>
+</body>
+
+</html>
