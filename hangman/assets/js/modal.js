@@ -17,3 +17,9 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+function keyboard() {
+    var keyboard = document.getElementById('challengeWord');
+
+    keyboard.focus();
+}
