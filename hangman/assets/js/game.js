@@ -230,15 +230,15 @@ function gameReset() {
 }
 
 function checkGuess() {
-    // var guessInput = document.getElementById("fullGuess");
+    // check if full guess entered matches challenge word
     var fullGuess = document.getElementById("fullGuess").value;
 
     if (fullGuess.toLowerCase() == guessWordsArr[playerStats.currentWord].toLowerCase()) {
         victory();
+        //reset feeling lucky text area to blank
         $('#fullGuess').val('');
     } else {
         guess.remainingGuess -= 1;
-        guessInput.textContent = "";
         outOfGuesses();
     }
     updateStats();
