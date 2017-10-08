@@ -2,9 +2,16 @@ var audioElement = document.createElement("audio");
 audioElement.setAttribute("src", "assets/Audio/mistyMtns.mp3");
 
 $(document).ready(function () {
+    let w = $(window).width();
 
-    $('#sidebarCollapse').on('click', function () {
+    if (w < 600){
         $('#sidebar').toggleClass('active');
+    } else {
+        $('#sidebar').toggleClass('');
+    }
+    
+    $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
     });
 
     //on page load, execute

@@ -69,22 +69,22 @@
         <div id="content">
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
-                            <i class="glyphicon glyphicon-align-left"></i>
-                            <span>Toggle Menu</span>
-                        </button>
-                    </div>
+                    <div class="row col-md-12">
+                        <div class="navbar-header">
+                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                                <span>Toggle Menu</span>
+                            </button>
 
-                    <div class="navbar-right">
-                        <button type="button" id="volumebtn" class="btn btn-warning" onclick="themeMusic();">
-                            <i class="fa fa-volume-off" aria-hidden="true" style="color: red"></i>&nbsp;&nbsp; Turn Off Music
-                        </button>
+                            <button type="button" id="volumebtn" class="btn btn-warning" onclick="themeMusic();">
+                                <i class="fa fa-volume-off" aria-hidden="true" style="color: red"></i>&nbsp;&nbsp; Turn Off Music
+                            </button>
+                        </div>
+
+                        <div class="row col-md-12 text-center header-title">
+                            <span>Hangman</span>
+                        </div>
                     </div>
-                    <div class="text-center header-title">
-                        <span>Hangman</span>
-                    </div>
-                </div>
             </nav>
 
 
@@ -124,7 +124,7 @@
                                 <div id="guessRemaining">Guesses Remaining</div>
                                 <div id="lettersGuessed">Letters Guessed</div>
                             </div>
-                            
+
                             <!-- user enters full word guess section -->
                             <div class="col-md-6 lucky">
                                 <div class="form-group">
@@ -138,23 +138,23 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- footer -->
-        <nav class="navbar-footer navbar-fixed-bottom">
-            <div class="container footer-container">
-                <p class="text-center ">Designed by
-                    <a href="https://jamesmart77.github.io" target="_blank">
-                        <b>James Martineau</b>
-                    </a>
-                    <br> &copy Copyright 2017
-                </p>
             </div>
-        </nav>
-    </div>
-    <script type="text/javascript" src="assets/js/game.js"></script>
-    <script type="text/javascript" src="assets/js/modal.js"></script>
-    <script type="text/javascript" src="assets/js/sidebar.js"></script>
+
+            <!-- footer -->
+            <nav class="navbar-footer navbar-fixed-bottom">
+                <div class="container footer-container">
+                    <p class="text-center ">Designed by
+                        <a href="https://jamesmart77.github.io" target="_blank">
+                            <b>James Martineau</b>
+                        </a>
+                        <br> &copy Copyright 2017
+                    </p>
+                </div>
+            </nav>
+        </div>
+        <script type="text/javascript" src="assets/js/game.js"></script>
+        <script type="text/javascript" src="assets/js/modal.js"></script>
+        <script type="text/javascript" src="assets/js/sidebar.js"></script>
 </body>
 
 </html>

@@ -31,9 +31,10 @@ p {
     transition: all 0.3s;
 }
 
-.fa{
+.fa {
     font-size: 22px;
 }
+
 #sidebar.active {
     margin-left: -250px;
 }
@@ -101,7 +102,7 @@ ul ul a {
 
 #content {
     width: calc(100% - 250px);
-    padding: 40px;
+    padding: 40px 5px;
     margin: 0 auto;
     min-height: 100vh;
     transition: all 0.5s;
@@ -116,18 +117,23 @@ ul ul a {
     position: relative;
 }
 
-.navbar-btn{
-    margin: 12px 0 10px 0;
+.navbar-btn {
+    position: absolute;
+    top: 0;
+    left: -1%;
 }
 
-.header-title{
+.header-title {
     margin: auto;
     font-size: 36px;
     font-weight: 600;
 }
 
 #volumebtn {
-    margin: 10px;
+    position: absolute;
+    top: 7px;
+    left: 76%;
+    
 }
 
 .panel-default {
@@ -145,17 +151,22 @@ ul ul a {
     margin: 10px auto;
     display: block;
 }
+
 .hangman-img {
     display: block;
     margin: 10px auto;
+    max-width: 125px;
 }
 
-.logo{
+.logo {
     margin: 10px auto 30px auto;
     display: block;
     /* background-color: #ffffff; */
-    width: 150px;
+    width: 50%;
+    min-width: 75px;
+    max-width: 150px;
 }
+
 .hangman-section {
     background-color: #ccc;
     border-radius: 10px;
@@ -172,14 +183,14 @@ ul ul a {
     border-radius: 5px;
 }
 
-.userStats{
+.userStats {
     float: left;
     max-width: 40%;
     min-width: 200px;
     margin-right: 10px;
 }
 
-.lucky{
+.lucky {
     float: left;
     max-width: 50%;
     min-width: 200px;
@@ -187,7 +198,7 @@ ul ul a {
     float: right;
 }
 
-#fullGuess{
+#fullGuess {
     margin-bottom: 5px;
     float: right;
     width: 100%;
@@ -196,6 +207,7 @@ ul ul a {
 .col-md-6 {
     padding: 10px 0;
 }
+
 .enterGuess {
     width: 80%;
 }
@@ -257,7 +269,9 @@ ul ul a {
     cursor: pointer;
 }
 
+
 /* footer */
+
 .navbar-footer {
     position: fixed;
     bottom: 0;
@@ -266,11 +280,34 @@ ul ul a {
     background-color: #777777;
 }
 
-.footer-container p{
+.footer-container p {
     color: #ffffff;
     padding-top: 8px;
 }
 
-.footer-container p a:hover{
+.footer-container p a:hover {
     color: #4aaaa5;
+}
+
+@media screen and (max-width: 600px) {
+    #content {
+        width: 95%;
+        margin: 0 15px;
+        min-width: 400px;
+    }
+
+    .navbar-btn {
+        position: static;
+    }
+
+    #volumebtn {
+        position: static;
+    }
+
+    .navbar-header {
+        text-align: center;
+    }
+    .hangman-img {
+        max-width: 90px;
+    }
 }
