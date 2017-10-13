@@ -1,0 +1,93 @@
+body {
+    background-image: url("../images/background.jpg");
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+}
+
+.jumbotron {
+    margin-top: 15px;
+}
+
+.panel-heading {
+    font-size: 18px;
+}
+
+.gem-header {
+    margin: 0 -15px;
+}
+
+.row {
+    margin: 15px 0;
+}
+
+.stats {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.stats-num {
+    font-weight: normal;
+}
+
+.crystal-img {
+    width: 50%;
+    max-height: 204px;
+}
+
+.batman {
+    max-width: 250px;
+    text-align: center;
+    position: fixed;
+    bottom: 60px;
+    height: 15%;
+    left: -140px;
+    z-index: 2;
+}
+
+.batman-txt {
+    max-width: 125px;
+    padding: 5px;
+    font-weight: bold;
+    color: #000000;
+    position: fixed;
+    z-index: 2;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #d9d9d9;
+    text-align: center;
+}
+
+.batman-img {
+    /* position: fixed;
+    bottom: 60px; */
+    height: 95%;
+    z-index: 3;
+}
+
+
+/* footer */
+
+.navbar-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top: 5px solid #4aaaa5;
+    background-color: #777777;
+}
+
+.footer-container p,
+a {
+    color: #ffffff;
+    padding-top: 8px;
+    text-decoration: none;
+}
+
+.footer-container a {
+    font-size: 16px;
+}
+
+.footer-container p a:hover {
+    color: #4aaaa5;
+    text-decoration: none;
+}

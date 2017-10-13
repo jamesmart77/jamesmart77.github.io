@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- RESET CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- We need to bring in the bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <title>Crystals Collector Game</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1>Crystal Collector Challenge</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="panel panel-default">
+                        <div class="panel-heading text-center">Rules</div>
+                        <div class="panel-body">
+                            <div class="Rules">
+                                <ul>
+                                    <li>Click on the Illusive Gems to increase your count</li>
+                                    <li>Each gem has a randomly generated value</li>
+                                    <li><b>To win</b>, you need to match your count with the challenge number</li>    
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading text-center">Game Stats</div>
+                        <div class="panel-body">
+                            <div class="stats">Challenge Number:
+                                <span class="challengeNumber stats-num"></span>
+                            </div>
+                            <div class="stats">Your Count:
+                                <span class="userCount stats-num">0</span>
+                            </div>
+                            <div class="stats">Wins:
+                                <span class="wins stats-num">0</span>
+                            </div>
+                            <div class="stats">Losses:
+                                <span class="loss stats-num">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default col-md-6 pull-right">
+                <div class="panel-heading text-center gem-header">Illusive Gems</div>
+                <div class="panel-body">
+                    <div class="crystalContainer"></div>
+                    <div class="row img-row row1"></div>
+                    <div class="row img-row row2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="batman"></div>
+        <!-- footer -->
+        <nav class="navbar-footer navbar-fixed-bottom">
+            <div class="container footer-container">
+                <p class="text-center ">Designed by
+                    <a href="https://jamesmart77.github.io" target="_blank">
+                        <b>James Martineau</b>
+                    </a>
+                    <br> &copy Copyright 2017
+                </p>
+            </div>
+        </nav>
+    </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="assets/js/game.js"></script>
+    <script type="text/javascript" src="assets/js/beginGame.js"></script>
+    <script type="text/javascript" src="assets/js/imageClick.js"></script>
+    <script type="text/javascript" src="assets/js/randomNum.js"></script>
+    <script type="text/javascript" src="assets/js/batman.js"></script>
+</body>
+
+</html>
