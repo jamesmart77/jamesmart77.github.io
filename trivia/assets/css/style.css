@@ -49,7 +49,9 @@ body {
 
 .start-btn {
     width: 33.3%;
+    min-width: 130px;
     font-weight: bold;
+    text-align: center;
 }
 
 .start-btn:hover{
@@ -94,6 +96,8 @@ body {
     display: block;
     margin: 13px auto;
     width: 33.3%;
+    min-width: 175px;
+    text-align: center;
 }
 
 .option-btn:hover {
