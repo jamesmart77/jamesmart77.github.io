@@ -1,0 +1,23 @@
+- landing page has 80s rock music playing
+- user clicks start button
+    - setInterval starts count down decrement from 30 seconds
+    - question appears with four answer options
+    - answer selected before count is 0
+        - if correct
+            - show gif
+            - increment correct answer JSON
+            - tell user they're right
+        - if wrong
+            - show funny gif
+            - increment wrong answer JSON
+            - tell user they're wrong
+    - user runs out of time
+        - do the same thing as if they're wrong
+
+    - Display right/wrong answer for 5 seconds (show user time remaining until next question)
+
+    - go through all questions same as above
+
+    - after last question, show scores and ask if user wants to start again
+        - if yes, without refreshing page, start the game over
+

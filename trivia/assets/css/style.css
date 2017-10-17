@@ -1,0 +1,136 @@
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Arial', serif;
+}
+
+body {
+    /* background: url(../images/background.png); */
+    /* background-repeat: repeat; */
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-image: url("../images/80sWallpaper.png");
+    background-repeat: repeat;
+    /* padding-top: 80px; */
+}
+
+
+/* navbar container */
+
+.wrapper {
+    z-index: 2;
+    overflow: scroll;
+    margin-bottom: 25px;
+    
+}
+
+.jumbotron {
+    display: block;
+    margin: 25px auto;
+    border: 1px solid #46D246;
+    background-color: #444;
+}
+
+.w3-animate-top {
+    animation-duration: 1.5s;
+}
+
+.header-img1{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.header-img2{
+    display: block;
+    margin: 0 auto 25px auto;
+    width: 15%;
+}
+
+.start-btn {
+    width: 33.3%;
+    font-weight: bold;
+}
+
+.start-btn:hover{
+    background-image: none;
+    background-color: #46D246;
+    color: #E500E5;
+    border: 2px solid l
+    
+}
+
+
+/* trivia question section */
+
+.trivia-container {
+    color: #f5deb3;
+    text-align: center;
+    font-size: 14px;
+}
+
+.panel-default{
+    margin: 25px auto;
+    border: 1px solid #46D246;
+    background-color: #444;
+}
+
+.round {
+    font-size: 30px;
+    margin: 20px auto;
+    font-weight: bold;
+}
+
+.question {
+    font-size: 24px;
+    margin: 10px auto;
+}
+
+.time-remaining {
+    font-size: 22px;
+}
+
+.option-btn {
+    display: block;
+    margin: 13px auto;
+    width: 33.3%;
+}
+
+.option-btn:hover {
+    background-color: #4aaaa5;
+    background-image: none;
+}
+
+.answer-response {
+    font-size: 18px;
+    margin: 10px auto;
+}
+.answerImg{
+    width: 33.3%;
+    border-radius: 10px;
+    border: 2px solid #444;
+    margin: 15px auto;
+}
+
+
+/* footer */
+
+.navbar-fixed-bottom {
+    border-top: 5px solid #46D246;
+    background: #444;
+    color: #f5deb3;
+}
+
+.footer {
+    padding: 15px;
+    text-align: center;
+}
+
+.footer a {
+    color: #f5deb3;
+}
+
+.footer a:hover {
+    text-decoration: none;
+    color: #E500E5;
+}
