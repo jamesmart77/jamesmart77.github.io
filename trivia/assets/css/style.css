@@ -19,7 +19,6 @@ body {
 
 .wrapper {
     z-index: 2;
-    overflow: scroll;
     margin-bottom: 25px;
     
 }
