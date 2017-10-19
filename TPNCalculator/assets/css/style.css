@@ -1,0 +1,290 @@
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+i {
+    font-style: italic;
+}
+
+/* sticky header */
+
+.personal-header {
+    background-color: #4aaaa5;
+    color: #fff;
+    height: 65px;
+}
+
+.name-header{
+    margin: 15px 0;
+}
+
+.affix {
+    top: 0;
+    width: 100%;
+}
+
+.affix+.container-fluid {
+    padding-top: 70px;
+}
+
+body {
+    background: url(../images/background.png);
+    background-repeat: repeat;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    /* padding-top: 80px; */
+}
+
+
+/* awesome font icons */
+
+.fa-question-circle-o {
+    color: tan
+}
+
+/* navbar container */
+
+.navbar {
+    left: -5px;
+    width: 105%;
+}
+
+.navbar-inverse {
+    z-index: 2;
+}
+
+/* nav bar link colors */
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffffff;
+}
+
+
+/* navbar link hover */
+
+.navbar-inverse .navbar-nav li a:hover {
+    background: #ccc;
+    color: #777777;
+}
+
+
+/* when hamburger menu appears, drop down align right */
+/* navbar option align right */
+
+.nav>li {
+    margin-right: 80px;
+}
+.navbar-nav>li>a {
+    text-align: right;
+    font-weight: bold;
+}
+
+.navbar-toggle{
+    margin-right: 25px;
+}
+
+.container-fluid {
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+/*------- general content section------ */
+
+
+.panel-info {
+    margin: 0 30px 60px 0px;
+}
+
+
+/* panel page header formatting */
+
+.page-header {
+    margin-bottom: 0;
+}
+
+.page-header h2,
+h3 {
+    color: #4aaaa5;
+    margin: 0;
+}
+
+.page-header h3 {
+    text-align: center;
+}
+
+
+/* User Input section */
+
+.table-head{
+    font-weight: bold;
+}
+
+.row-head {
+    vertical-align: middle !important;
+}
+.form-control{
+    /* width: 40%; */
+    min-width: 75px;
+    text-align: center;
+}
+
+/* connect with me */
+
+.icons {
+    margin: auto;
+}
+
+.connect-pic {
+    width: 72px;
+    height: auto;
+    float: left;
+    margin: 5px 5px 20px 6px;
+}
+
+.connect-pic:hover {
+    width: 80px;
+    margin: -2px;
+}
+
+
+/* portfolio pic */
+
+.portfolio-pic {
+    width: 100%;
+    margin: 5px;
+}
+
+.portfolio-pic:hover {
+    border: 3px solid #bbb;
+    /* negative margin helps stabalize other element -- cleaner */
+    margin-bottom: -0.5px;
+}
+
+.hangman {
+    width: 56%;
+}
+
+.hangman:hover{
+    border: 0px solid #ffffff;
+    margin-bottom: -0.5px;
+}
+.portfolio-row {
+    margin: -45px -15px 0 -15px;
+}
+
+.label {
+    width: 100%;
+    height: 45px;
+    z-index: 1;
+    float: left;
+    position: relative;
+    bottom: -200px;
+    left: 5px;
+    line-height: 40px;
+    font-size: 21px;
+    background-color: #4aaaa5;
+}
+
+.label a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.label a:hover {
+    font-weight: bold;
+    color: darkorange;
+}
+/* contact form */
+
+label {
+    color: #777777;
+}
+
+textarea {
+    max-width: 100%;
+    max-height: 175px;
+    min-height: 30px;
+}
+
+.submit-btn {
+    width: 150px;
+}
+
+.submit-btn:hover {
+    border: 2px solid #bbb;
+    margin: -1px;
+}
+
+
+/* footer */
+
+.navbar-fixed-bottom {
+    border-top: 5px solid #4aaaa5;
+    background: #777777;
+    color: #ffffff;
+}
+
+.footer {
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* ---------------------------------------- */
+
+
+/* slide nav containers out for more room */
+
+@media screen and (max-width: 992px) {
+    .panel-default {
+        width: 100%;
+        float: left;
+        margin-bottom: 70px;
+    }
+    .panel-info {
+        margin-bottom: 10px;
+    }
+    .page-header h3 {
+        text-align: left;
+    }
+    /* portfolio pics */
+    .portfolio-pic {
+        max-width: 89%;
+        margin: auto;
+        margin-bottom: 15px;
+        min-width: 225px;
+    }
+    .label {
+        width: 89.15%;
+        left: 5.5%;
+        bottom: -350px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .label {
+        bottom: -250px;
+    }
+
+    .final-panel {
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    body {
+        min-width: 425px;
+    }
+    .container-fluid {
+        padding: 0 5px;
+    }
+    .personal-header {
+        padding-left: 20px;
+    }
+
+    .label {
+        bottom: -190px;
+    }
+}
