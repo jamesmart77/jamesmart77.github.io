@@ -60,7 +60,7 @@ var trivia = {
                 }
             ],
             answers: ["70 days in","Mikhail Gorbachev","Tiananmen Square"],
-            answerImages: ["ronaldReagan.jpg","mikhail.jpg","Tiananmen.jpg"]
+            answerImages: ["ronaldReagan.jpg","mikhail.jpg","Tiananmen.JPG"]
         }
     ],
     //set initial values
