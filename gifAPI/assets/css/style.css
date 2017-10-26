@@ -1,0 +1,94 @@
+body {
+    background-color: #333;
+}
+
+.wrapper {
+    margin: 15px;
+}
+
+/* row holds user input and actor pills */
+.actor-row {
+    max-width: 1060px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 15px;
+    box-sizing: content-box;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+/* user input element */
+.actor-input {
+    margin: 0 auto;
+    max-width: 1060px;
+    width: 100%;
+    padding: 0;
+}
+
+/* container for actor pills */
+.actor-container {
+    margin: 10px 0;
+    max-width: 1060px;
+    padding: 0;
+}
+
+/* actor pills */
+.actor-btn {
+    margin: 2px 5px 2px 0px;
+    border: 2px solid #eea236;
+}
+
+/* alert div */
+.alert {
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 25%;
+    z-index: 10;
+    width: 50%;
+}
+
+.gif-row {
+    max-width: 1060px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 15px;
+    box-sizing: content-box;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.gif-container {
+    max-width: 1060px;
+    width: 100%;
+    padding: 0;
+}
+
+/* individual gif divs */
+.gifDiv {
+    float: left;
+    margin: 10px 20px 10px 0px;
+    width: 23%;
+}
+
+.gifImg {
+    border-radius: 5px;
+    border: 1px solid #777777;
+    height: 150px;
+    width: 100%;
+    min-width: 50%;
+    min-height: 75px;
+}
+
+.gifImg:hover {
+    border: 1px solid #999999;
+}
+
+.gifDetails {
+    color: #fff;
+    margin-top: 5px;
+}
