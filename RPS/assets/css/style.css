@@ -1,0 +1,156 @@
+body {
+    background-color: #333;
+    min-width: 450px;
+}
+
+.wrapper {
+    margin: 15px;
+}
+
+
+/* row holds user input and actor pills */
+
+.title {
+    /* max-width: 1060px; */
+    width: 100%;
+    margin: 10px auto;
+    position: relative;
+    padding: 5px 15px 10px;
+    flex-flow: row nowrap;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    border-bottom: 5px solid #4aaaa5;
+}
+
+
+/* row holds user input and actor pills */
+
+.input-row {
+    /* max-width: 1060px; */
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 10px 0;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+
+/* user input element */
+
+.user-input {
+    margin: 0 auto;
+    /* max-width: 1060px; */
+    width: 60%;
+    padding: 0;
+    float: none;
+}
+
+.game-updates {
+    color: #fff;
+    display: none;
+    text-align: center;
+}
+
+
+/* player panel section */
+
+.player1,
+.player2,
+.results {
+    width: 30%;
+    float: left;
+    margin: 10px 0;
+}
+
+.player2 {
+    float: right;
+}
+
+.page-header {
+    margin: 15px 0 0px;
+    padding-bottom: 0px;
+}
+
+.header {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+
+/* active player option buttons */
+
+.btn-options-visible {
+    display: block;
+    width: 75%;
+    margin: 5px auto;
+}
+
+.btn-options-invisible {
+    display: none;
+    width: 75%;
+    margin: 5px auto;
+}
+
+.btn-options-invisible-round {
+    display: none;
+    width: 75%;
+    margin: 5px auto;
+}
+
+
+/* wins/losses  */
+
+.stat {
+    margin: 10px auto 0;
+    width: 75%;
+}
+
+
+/* img in results panel */
+.body-results{
+    padding: 5px;
+}
+.results {
+    margin: 10px 5%;
+    min-height: 86px;
+    max-height: 237px;
+}
+
+.results-img {
+    width: 100%;
+    max-height: 216px;
+}
+
+
+/* messages sections */
+
+.messages {
+    margin: 15px 0;
+}
+
+.messages-header {
+    padding: 0 10px;
+    margin-bottom: 5px;
+}
+
+#posted {
+    margin-bottom: 10px;
+    border: 1px solid #d9d9d9;
+    padding: 10px 5px;
+    border-radius: 5px;
+    max-height: 100px;
+    overflow: scroll;
+}
+
+hr {
+    margin: 5px -2px;
+}
+
+.send-btn {
+    margin-top: 10px;
+    float: right;
+}
