@@ -1,0 +1,126 @@
+/* BACKGROUND COLOR FOR ALL PAGES */
+
+body {
+    background-color: #e9ecef;
+}
+
+
+/* STYLING FOR THE NAV BAR */
+
+.nav-item {
+    text-align: right;
+}
+
+.navbar-toggler-icon {
+    cursor: pointer;
+}
+
+.fa-heart-o {
+    color: darkgoldenrod;
+}
+
+.fa-home {
+    color: #777;
+}
+
+.fa-sign-out{
+    color: darkred;
+}
+
+
+/* STYLING FOR THE SEARCH PARAMETERS DIV */
+
+#accordion {
+    margin: 0 -1px;
+}
+
+#search-input-container {
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+}
+
+.search-heading {
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-align: right;
+}
+
+.form-check-label {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 6px;
+}
+
+#submit-button {
+    padding: 0px;
+}
+
+#submit-btn {
+    cursor: pointer;
+}
+
+.fa-angle-double-down:before {
+    color: #fff;
+}
+
+/* STYLING FOR THE ANIMALS ON THE HOME PAGE */
+
+#animal-div {
+    border: solid 1px gray;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+}
+
+#petFinderInfo,
+#animal-preview-container {
+    margin: 20px;
+    float: center;
+    cursor: pointer;
+}
+
+.card-img-top {
+    height: 300px;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+
+/* STYLING FOR THE ANIMALS ON THE SAVED PAGE */
+
+#saved-animal-container {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.container {
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 992px) {
+    #animal-div,
+    #petFinderInfo {
+        margin: 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .form-check-label {
+        padding-left: 17px;
+    }
+}

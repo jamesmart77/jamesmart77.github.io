@@ -1,0 +1,66 @@
+body {
+    background-color: #e9ecef;
+}
+
+.col-md-4 {
+    max-width: 100%;
+}
+
+
+/* animals master container */
+
+#saved-animal-container {
+    float: left;
+    margin-left: 16px;
+}
+
+
+/* individual pet details */
+
+#animal-div {
+    width: 20rem;
+    float: left;
+    margin: 15px 40px 15px 0;
+}
+
+.savedPetImg {
+    height: 300px;
+    cursor: pointer;
+}
+
+.savedPetCard {
+    padding: 0;
+}
+
+.savedPetCardBody {
+    padding: 10px;
+}
+
+
+/* awesome font icons */
+
+.fa-heart-o {
+    color: darkgoldenrod;
+}
+
+.fa-trash-o {
+    color: darkred;
+    -webkit-transition-duration: .6s;
+    /* Safari 4.0 - 8.0 */
+    transition-duration: .6s;
+}
+
+.fa-sign-out {
+    color: darkred;
+}
+
+.fa-trash-o:hover {
+    -ms-transform: rotate(25deg);
+    /* IE 9 */
+    -webkit-transform: rotate(25deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(25deg);
+    -webkit-transition-duration: .3s;
+    /* Safari 4.0 - 8.0 */
+    transition-duration: .3s;
+}
