@@ -22,7 +22,7 @@ $(document).ready(function () {
 
     //if user logged in, rediret to home page
     if(userLoggedIn){
-        window.location.href("home-page.html");
+        window.location("/home-page.html");
     }
     // Get elements
     const txtEmail = $("#txtEmail");
@@ -104,7 +104,7 @@ function OAuthSignIn() {
         // The signed-in user info.
         var user = result.user;
         // redirect to home page
-        window.location.href("home-page.html");
+        window.location("/home-page.html");
     }).catch(function (error) {
         // Handle Errors here.
         var errorCode = error.code;
