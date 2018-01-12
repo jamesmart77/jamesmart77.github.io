@@ -1,0 +1,105 @@
+body {
+    min-width: 475px;
+    font-family: 'Arial', 'sans-serif';
+}
+
+
+/* container holding carousel items */
+
+.carousel-inner {
+    padding: 20px 35px;
+    margin: 0 auto;
+}
+
+
+/* carousel images */
+
+.pet-carousel-img {
+    border-radius: 5px;
+    max-height: 750px;
+    margin: 0 auto;
+    max-width: 1060px;
+}
+
+#animal-carousel-results-info {
+    margin: 15px 35px;
+}
+
+.savePetIcon {
+    width: 100%;
+    text-align: right;
+    margin: 0 35px 15px 0;
+    color: #000;
+    font-size: 24px;
+}
+
+
+.fa-heart-o {
+    color: darkred;
+}
+
+.header-heart{
+    color: darkgoldenrod;
+}
+
+.fa-heart-o:hover {
+    color: darkgoldenrod;
+}
+
+.fa-heart {
+    color: darkgoldenrod;
+}
+
+#DetailHeader {
+    text-align: left;
+    color: #333;
+    text-decoration: none;
+}
+
+#mainDetailHeader {
+    text-align: left;
+    text-decoration: none;
+    color: #333;
+}
+
+#DetailHeader:hover {
+    color: #777;
+}
+
+#mainDetailHeader:hover {
+    color: #333;
+}
+
+.card-block {
+    padding: 20px;
+}
+
+
+/* pet details */
+
+.animal-description-details {
+    max-width: 1060px;
+    margin: 15px 35px;
+}
+
+.additional-info {
+    font-size: 13px;
+}
+
+
+/* google maps */
+
+#animal-carousel-results-map {
+    margin: 0 35px;
+}
+
+#embedded-map {
+    width: 100%;
+    height: 450px;
+}
+
+@media screen and (max-width: 1060px) {
+    .pet-carousel-img {
+        padding: 0;
+    }
+}
