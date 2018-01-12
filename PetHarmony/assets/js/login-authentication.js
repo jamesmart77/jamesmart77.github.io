@@ -1,3 +1,4 @@
+// Initialize Firebase
 var config = {
     apiKey: "AIzaSyBdvzDGVlb8w6es6yBOacj8n7TTkvVmoCA",
     authDomain: "group-project-1-8353f.firebaseapp.com",
@@ -6,7 +7,6 @@ var config = {
     storageBucket: "group-project-1-8353f.appspot.com",
     messagingSenderId: "653234238699"
 };
-
 firebase.initializeApp(config);
 
 // Create a variable to reference the database.
@@ -15,8 +15,16 @@ var database = firebase.database();
 $(document).ready(function () {
     var userLoggedIn = localStorage.getItem("userLoggedIn");
 
-    // Get elements
+    //if on index page, hide login-error modal
+    if(window.location.href.indexOf("index.html") !== -1){
+        $("#login-error").hide();
+    }
 
+    //if user logged in, rediret to home page
+    if(userLoggedIn){
+        window.location("/home-page.html");
+    }
+    // Get elements
     const txtEmail = $("#txtEmail");
     const txtPassword = $("#txtPassword");
     const btnLogin = $("#btnLogin");
@@ -80,7 +88,7 @@ $(document).ready(function () {
             // $("#auth-text").html("Sign Up or Login to find your purrrfect pet!");
             console.log('not logged in');
             btnLogout.hide();
-            // window.location.href = "https://ehulseman.github.io/Group-Project-1/index.html";
+            // window.location.href = "index.html";
         }
     });
 
@@ -95,7 +103,8 @@ function OAuthSignIn() {
         var token = result.credential.accessToken;
         // The signed-in user info.
         var user = result.user;
-        // ...
+        // redirect to home page
+        window.location("/home-page.html");
     }).catch(function (error) {
         // Handle Errors here.
         var errorCode = error.code;
@@ -104,6 +113,14 @@ function OAuthSignIn() {
         var email = error.email;
         // The firebase.auth.AuthCredential type that was used.
         var credential = error.credential;
+
+        console.log("ERROR\n")
+        console.log("Error Message\n" + errorMessage + "\n\n")
+        console.log("Error Code\n" + errorCode + "\n\n")
+        console.log("Error Email\n" + email + "\n\n")
+        console.log("Error Credential\n" + credential + "\n\n")
+
+        $("#login-error").show();
         // ...
     });
 
