@@ -74,9 +74,11 @@ $(document).ready(function () {
         localStorage.clear();
     });
 
-    // add a realtime listener
+    // get the current user by setting an observer on the Auth object
     firebase.auth().onAuthStateChanged(firebaseUser => {
         if (firebaseUser) {
+
+            //if Auth Object/Current User exists, redirect to home-page
             console.log(firebaseUser);
             // btnLogout.show();
 
