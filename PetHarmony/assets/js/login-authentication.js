@@ -16,13 +16,13 @@ $(document).ready(function () {
     var userLoggedIn = localStorage.getItem("userLoggedIn");
 
     //if on index page, hide login-error modal
-    if(window.location.href.indexOf("index.html") !== -1){
-        $("#login-error").hide();
-    }
+    // if(window.location.href.indexOf("index.html") !== -1){
+    //     $("#login-error").hide();
+    // }
 
     //if user logged in, rediret to home page
     if(userLoggedIn){
-        window.location("/home-page.html");
+        window.location.href = "home-page.html";
     }
     // Get elements
     const txtEmail = $("#txtEmail");
@@ -33,7 +33,7 @@ $(document).ready(function () {
     const btnGoogle = $("#btnGoogle");
 
     // add login event
-    $("#btnLogin").on("click", e => {
+    $(".login-card").on("click", ".login", e => {
         // Get email and passwork
         const email = txtEmail.val().trim();
         const pass = txtPassword.val().trim();
@@ -53,7 +53,7 @@ $(document).ready(function () {
         // }
     });
     // Add signup event
-    $("#btnSignUp").on("click", e => {
+    $(".login-card").on("click", ".signUp", e => {
         // TODO: Check for real email
         const email = txtEmail.val().trim();
         const pass = txtPassword.val().trim();
@@ -106,7 +106,8 @@ function OAuthSignIn() {
         // The signed-in user info.
         var user = result.user;
         // redirect to home page
-        window.location("/home-page.html");
+        window.location.href ="home-page.html";
+
     }).catch(function (error) {
         // Handle Errors here.
         var errorCode = error.code;
