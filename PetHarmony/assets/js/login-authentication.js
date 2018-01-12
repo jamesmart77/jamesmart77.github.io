@@ -33,7 +33,7 @@ $(document).ready(function () {
     const btnGoogle = $("#btnGoogle");
 
     // add login event
-    $(".login-card").on("click", ".login", e => {
+    $("#btnLogin").on("click", e => {
         // Get email and passwork
         const email = txtEmail.val().trim();
         const pass = txtPassword.val().trim();
@@ -53,7 +53,7 @@ $(document).ready(function () {
         // }
     });
     // Add signup event
-    $(".login-card").on("click", ".signUp", e => {
+    $("#btnSignUp").on("click", e => {
         // TODO: Check for real email
         const email = txtEmail.val().trim();
         const pass = txtPassword.val().trim();
