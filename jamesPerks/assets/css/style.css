@@ -1,0 +1,82 @@
+.jumbotron {
+	background-color: teal;
+	color: #ffffff;
+	font-weight: bold;
+	padding-left: 15px;
+}
+
+.jumbotron h1 {
+	color:white;
+}
+
+p, h1, h4 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#funText {
+	color: black;
+	font-size: 24px;
+	font-family: 'Roboto Slab', serif;
+}
+
+#box {
+	height: 100px;
+	width: 100px;
+	margin:auto;
+}
+
+#mainImg {
+	height: 185px;
+	border-radius: 25px;
+    border: 2px solid #777777;
+    padding: 2px; 
+}
+
+.btn {
+	margin-top: 5px;
+}
+
+#factText {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+    color: teal;
+}
+
+.buffer {
+	margin-top: 20px;
+}
+.well {
+	margin: 5px 5px 20px 30px;
+	padding: 5px 19px;
+	min-width: 450px;
+	float: left;
+}
+
+.well h3 {
+	margin-top: 0px;
+}
+
+textarea {
+	border-radius: 5px;
+	width: 100%;
+	max-width: 100%;
+	border: 1px solid #ccc;
+}
+
+#added-comment{
+	border-radius: 5px;
+	width: 100%;
+	border: 1px solid #ccc;
+	text-align: left;
+    padding: 10px;
+    background: #fff;
+}
+
+#post-date {
+	width: 100%;
+	border: none;
+	text-align: right;
+	padding: 5px;
+	font-size: 10px;
+    background: #fff;
+}
