@@ -1,22 +1,30 @@
+// Initialize Firebase
 var config = {
-    apiKey: "AIzaSyBdvzDGVlb8w6es6yBOacj8n7TTkvVmoCA",
-    authDomain: "group-project-1-8353f.firebaseapp.com",
-    databaseURL: "https://group-project-1-8353f.firebaseio.com",
-    projectId: "group-project-1-8353f",
-    storageBucket: "group-project-1-8353f.appspot.com",
-    messagingSenderId: "653234238699"
+    apiKey: "AIzaSyA5BBHsZ0uF6i3UrfHLADv6BmvxO4qZdP0",
+    authDomain: "petfinder-b69ee.firebaseapp.com",
+    databaseURL: "https://petfinder-b69ee.firebaseio.com",
+    projectId: "petfinder-b69ee",
+    storageBucket: "petfinder-b69ee.appspot.com",
+    messagingSenderId: "377377835561"
 };
-
 firebase.initializeApp(config);
 
 // Create a variable to reference the database.
 var database = firebase.database();
 
-$(document).ready(function () {
+$(document).ready(() => {
     var userLoggedIn = localStorage.getItem("userLoggedIn");
 
-    // Get elements
+    //if on index page, hide login-error modal
+    if(window.location.href.indexOf("index.html") !== -1){
+        $("#login-error").hide();
+    }
 
+    //if user logged in, rediret to home page
+    if(userLoggedIn){
+        window.location.href = "home-page.html";
+    }
+    // Get elements
     const txtEmail = $("#txtEmail");
     const txtPassword = $("#txtPassword");
     const btnLogin = $("#btnLogin");
@@ -49,13 +57,19 @@ $(document).ready(function () {
         // TODO: Check for real email
         const email = txtEmail.val().trim();
         const pass = txtPassword.val().trim();
-        const auth = firebase.auth();
         if ((email == "") || (pass == "")) {
+            $("#login-error").show();
             return false;
         }
         //Sign Up
-        const promise = auth.createUserWithEmailAndPassword(email, pass);
-        promise.catch(e => console.log(e.message));
+        firebase.auth().createUserWithEmailAndPassword(email, pass).catch((error) => {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            console.log("ERROR:\n")
+            console.log("code: ", errorCode)
+            console.log("message: ", errorMessage)
+          });
     });
 
     // signout
@@ -80,7 +94,7 @@ $(document).ready(function () {
             // $("#auth-text").html("Sign Up or Login to find your purrrfect pet!");
             console.log('not logged in');
             btnLogout.hide();
-            // window.location.href = "https://ehulseman.github.io/Group-Project-1/index.html";
+            // window.location.href = "index.html";
         }
     });
 
@@ -95,9 +109,10 @@ function OAuthSignIn() {
         var token = result.credential.accessToken;
         // The signed-in user info.
         var user = result.user;
+        // redirect to home page
+        const wL = window.location;
 
-        window.location.href = "home-page.html";
-        // ...
+        window.location(wL.protocol + "//" + wL.hostname + "/home-page.html");
     }).catch(function (error) {
         // Handle Errors here.
         var errorCode = error.code;
@@ -106,6 +121,14 @@ function OAuthSignIn() {
         var email = error.email;
         // The firebase.auth.AuthCredential type that was used.
         var credential = error.credential;
+
+        console.log("ERROR\n")
+        console.log("Error Message\n" + errorMessage + "\n\n")
+        console.log("Error Code\n" + errorCode + "\n\n")
+        console.log("Error Email\n" + email + "\n\n")
+        console.log("Error Credential\n" + credential + "\n\n")
+
+        $("#login-error").show();
         // ...
     });
 
