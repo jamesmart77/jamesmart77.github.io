@@ -6,111 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- RESET CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-
-    <!--Font Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- We need to bring in the bootstrap CSS -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-        crossorigin="anonymous">
-
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-
-    <title>James Martineau | About</title>
-    <link rel="shortcut icon" href="assets/images/favicon.ico" />
-
+    <title>James Martineau</title>
 </head>
 
 <body>
-    <!-- Nav header  -->
-    <div class="container-fluid personal-header">
-        <h1>James Martineau</h1>
-    </div>
-    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="72">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <!-- nav options become buttons as screen size reduces -->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                    aria-expanded="false">
-                          <span class="sr-only">Toggle navigation</span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                        </button>
-                <!-- <a class="navbar-brand" href="about.html">James Martineau</a> -->
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html"><i class="fa fa-id-card-o" aria-hidden="true"></i> About</a></li>
-                    <li><a href="portfolio.html"><i class="fa fa-folder-o" aria-hidden="true"></i> Portfolio</a></li>
-                    <li><a href="contact.html"><i class="fa fa-user-o" aria-hidden="true"></i> Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
 
-    <div class="row container-fluid wrapper">
-        <div class="panel panel-info col-md-8">
-            <div class="page-header">
-                <h1>About Me</h1>
-            </div>
-            <div class="panel-body">
-                <img class="img-responsive img-rounded profile-pic" src="assets/images/profile.jpg" alt="james martineau profile picture">
-                <p class="about-body">
-                    In the beginning of college I had a vague idea of what coding was but certainly lacked an appreciation of its magnitude and
-                    power to impact every area of life. Then, one late evening, my mind was rocked with something as simple
-                    as VBA. The hook was sunk and I have been pursuing programming ever since.
-
-                    <br><br> My enjoyment for programming comes from the design and chase of it all. I like solving problems
-                    and creating a great user experience!
-
-                    <br><br> When I'm not coding, spending time with my wife (best friend) and our church family is where
-                    you will find me. We like getting involved in the community of Somersworth and enjoy going for walks
-                    through the woods with our beagle coon hound, York.
-                </p>
-
-            </div>
-        </div>
-
-        <div class="panel panel-default">
-            <div class="page-header">
-                <h3>Connect With Me</h3>
-            </div>
-            <div class="icons">
-                <a href="https://github.com/jamesmart77" target="_blank">
-                        <img class="img-responsive img-rounded connect-pic" src="assets/images/github_icon.png" alt="github">
-                    </a>
-                <a href="https://www.linkedin.com/in/jamesrmartineau/" target="_blank">
-                        <img class="img-responsive img-rounded connect-pic" src="assets/images/linkedin_icon.png" alt="linkedin">
-                    </a>
-                <a href="https://stackoverflow.com/users/8290649/james-martineau" target="_blank">
-                        <img class="img-responsive img-rounded connect-pic" src="assets/images/stackoverflow_icon.png" alt="stack overflow">
-                    </a>
-            </div>
-        </div>
-    </div>
-
-    <nav class="navbar navbar-default navbar-fixed-bottom">
-        <div class="container footer">
-            <span>&copy Copyright 2017 James Martineau</span>
-        </div>
-    </nav>
+    <!-- redirect to portfolio page if at root -->
+    <script type="text/javascript">
+        window.location.href = "/portfolio";
+    </script>
 </body>
 
 </html>
